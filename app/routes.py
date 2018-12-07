@@ -14,5 +14,8 @@ def getGalary():
         'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiKSmuISvOrC3rELVcZxm2YSmb3sQ8gbfJQdDs72pyu4u3UJk0'
     ]
-    return render_template('galeria.html', obrazki=obrazki)
+    return render_template('memy.html', obrazki=obrazki)
 
+@app.route('/memy')
+def memy():
+    return render_template('memy.html')
